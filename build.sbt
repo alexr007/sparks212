@@ -33,8 +33,12 @@ lazy val common = (project in file("common"))
 lazy val spark311s212 = (project in file("spark311s212"))
   .dependsOn(common)
 
-/** spark 2.4.7 + scala 2.12 */
+/** spark 2.4.7 + scala 2.12 % Provided */
 lazy val spark247s212 = (project in file("spark247s212"))
+  .dependsOn(common)
+
+/** spark 2.4.7 + scala 2.12 */
+lazy val spark247s212local = (project in file("spark247s212local"))
   .dependsOn(common)
 
 lazy val whole = (project in file("."))
