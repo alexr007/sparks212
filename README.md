@@ -1,6 +1,7 @@
 ### compile
 
 `sbt spark247s212/assembly`
+`sbt spark247s212/assemblyPackageDependency`
 
 ### copy to spark folder
 
@@ -14,6 +15,8 @@
 --master local[2] \
 ./spark247s212-assembly-0.0.3.jar
 `
+
+`/usr/bin/spark-2.4.7-bin-hadoop2.7/bin/spark-submit --class org.alexr.SparkLocalWriteDSE68ocs --master local[*] ./spark247s212-assembly-0.0.3.jar`
 
 ### yet another links
  - https://jasset75.github.io/Spark-Cassandra-Notes/Examples/dataset-join-02.html

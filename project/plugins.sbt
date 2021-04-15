@@ -33,3 +33,11 @@ addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.15.0")
  */
 addDependencyTreePlugin
 //addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.9.2")
+
+/**
+ * https://github.com/xerial/sbt-pack
+ *
+ * task:
+ * - pack
+ */
+addSbtPlugin("org.xerial.sbt" % "sbt-pack" % "0.13")

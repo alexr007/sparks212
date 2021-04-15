@@ -4,16 +4,16 @@ import org.alexr.data.Data.people
 import org.alexr.util.ScalaVersion
 import org.apache.spark.sql.{SaveMode, SparkSession}
 
-object SparkLocalWriteDSE68 {
+object SparkLocalWriteDSE68local {
 
-  def main(args: Array[String]): Unit = {
+  def code = {
     val spark = SparkSession.builder()
       .appName("Example #2")
       .master("local")
       .getOrCreate()
 
     val df = spark
-            .createDataFrame(people)
+      .createDataFrame(people)
 
     df.printSchema()
 
@@ -29,7 +29,8 @@ object SparkLocalWriteDSE68 {
       .save()
 
     spark.close()
-
   }
+
+//  def main(args: Array[String]): Unit = code
 
 }
